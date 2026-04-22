@@ -30,12 +30,8 @@ export default function Nav() {
         &nbsp;(8h–19h)
       </div>
       <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link
-          href="/"
-          className="text-xl font-bold tracking-tight hover:text-amber-700 transition-colors"
-          style={{ color: "var(--primary)" }}
-        >
-          Écuries du Moulin
+        <Link href="/" className="flex items-center">
+          <img src="/images/logo.png" alt="Écuries du Moulin" className="h-8 w-auto" />
         </Link>
 
         <nav className="hidden md:flex flex-wrap gap-1" aria-label="Navigation principale">

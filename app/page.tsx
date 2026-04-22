@@ -40,7 +40,7 @@ const cards = [
 ];
 
 const stats = [
-  { value: "+10 ans", label: "que nous accueillons les cavaliers de la région" },
+  { value: "+26 ans", label: "que nous accueillons les cavaliers de la région" },
   { value: "Dès 3 ans", label: "les enfants montent avec nous" },
   { value: "7j / 7", label: "le club est ouvert, toute l'année" },
   { value: "Diplômés d'État", label: "tous nos enseignants sont certifiés" },
@@ -146,7 +146,7 @@ export default function Home() {
             className="text-gray-600 leading-relaxed mb-8 text-base"
             style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}
           >
-            Un club familial à Ecluzelles où enfants et adultes apprennent à monter dans la bonne humeur, depuis plus de dix ans. Près de Dreux et Rambouillet.
+            Un club familial à Ecluzelles où enfants et adultes apprennent à monter dans la bonne humeur, depuis plus de 26 ans. Près de Dreux et Rambouillet.
           </p>
 
           {/* Google Reviews badge — cliquable */}
@@ -227,7 +227,7 @@ export default function Home() {
               Un endroit qu'on n'a pas créé par hasard
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4" style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>
-              Les Écuries du Moulin ont ouvert leurs portes à Ecluzelles il y a plus de dix ans, portées par une seule conviction : qu'on peut apprendre à monter à cheval dans un cadre humain, bienveillant et ancré dans la nature.
+              Les Écuries du Moulin ont ouvert leurs portes à Ecluzelles il y a plus de 26 ans, portées par une seule conviction : qu'on peut apprendre à monter à cheval dans un cadre humain, bienveillant et ancré dans la nature.
             </p>
             <p className="text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>
               Depuis, des centaines de cavaliers sont passés ici. Ce qui revient dans les mots de nos familles, c'est toujours la même chose : l'ambiance.

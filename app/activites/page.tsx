@@ -123,11 +123,13 @@ export default function Activites() {
           <h2 className="text-2xl font-bold mb-6 text-center" style={{ color: "var(--primary)" }}>Tarifs</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { label: "Cotisation annuelle", price: "Nous contacter" },
-              { label: "Cours collectif (30 min)", price: "Nous contacter" },
-              { label: "Cours particulier (45 min)", price: "Nous contacter" },
-              { label: "Stage demi-journée", price: "Nous contacter" },
-              { label: "Stage journée complète", price: "Nous contacter" },
+              { label: "Adhésion enfant (6–17 ans)", price: "90 €" },
+              { label: "Forfait annuel (1 cours/sem.)", price: "833 €" },
+              { label: "Carte 10 séances (adhérent)", price: "285 €" },
+              { label: "Cours collectif 1h (adhérent)", price: "31 €" },
+              { label: "Cours particulier 1h (adhérent)", price: "39 €" },
+              { label: "Cours Babys 45 min (3–5 ans)", price: "20 €" },
+              { label: "Carte 10 séances Babys", price: "185 €" },
               { label: "Animation groupe", price: "Sur devis" },
             ].map((t) => (
               <div key={t.label} className="flex justify-between items-center p-4 border border-gray-200 rounded-lg hover:border-amber-200 bg-white transition-colors">

@@ -7,23 +7,27 @@ export const metadata: Metadata = {
 
 const formules = [
   {
-    title: "Pension complète en box",
-    items: ["Box individuel spacieux", "Paillage quotidien", "Alimentation foin + granulés", "Sortie au paddock", "Surveillance quotidienne", "Accès carrière et installations"],
+    title: "Formule Basique",
+    price: "À partir de 320 € / mois",
+    items: ["Box individuel (4×4 m ou 3,5×3 m)", "Entretien quotidien du box", "Alimentation foin + floconné", "Accès carrières et manège", "Surveillance quotidienne"],
     img: "/images/photos/6443_ecuries-arrosees.jpg",
   },
   {
-    title: "Pension au pré",
-    items: ["Prairie clôturée sécurisée", "Abri naturel ou shelter", "Surveillance quotidienne", "Compléments alimentaires si besoin", "Accès carrière et installations", "Idéal pour les chevaux au naturel"],
+    title: "Formule Confort",
+    price: "À partir de 420 € / mois",
+    items: ["Tout inclus Formule Basique", "Sortie en paddock ou travail en longe", "1 cours collectif / semaine OU 1 monte / semaine", "Suivi personnalisé", "Idéal pour les propriétaires réguliers"],
     img: "/images/photos/820208_pre_vu_du_fond.jpg",
   },
   {
-    title: "Hébergement court",
-    items: ["Accueil de passage (1 nuit à plusieurs semaines)", "Box disponible à la nuitée", "Idéal pour les compétitions", "Alimentation et soins inclus", "Stationnement van/remorque"],
+    title: "Formule Premium",
+    price: "695 € / mois",
+    items: ["Tout inclus Formule Confort", "Travail monté régulier en l'absence du propriétaire", "Suivi et compte-rendu personnalisé", "Participation possible aux compétitions CSO", "La solution tout-en-un"],
     img: "/images/photos/52688_lea-et-tibisou-2.jpg",
   },
   {
-    title: "Services inclus",
-    items: ["Accès aux carrières et manège", "Sellerie sécurisée", "Douche pour les chevaux", "Aide vétérinaire et maréchal si besoin", "Suivi personnalisé"],
+    title: "Services à la carte",
+    price: "Sur devis",
+    items: ["Litière copeaux : 60 €/mois", "Travail monté : 25 €/séance", "Travail en longe : 15 €/séance", "Sortie paddock : 10 €/séance", "Débourrage : 300 €"],
     img: "/images/photos/258635_tristan-longe.jpg",
   },
 ];
@@ -73,7 +77,8 @@ export default function Proprietaires() {
                 </div>
                 <div className="p-6">
                   <div className="w-6 h-0.5 bg-amber-400 mb-3" />
-                  <h3 className="font-semibold mb-3" style={{ color: "var(--primary)" }}>{f.title}</h3>
+                  <h3 className="font-semibold mb-1" style={{ color: "var(--primary)" }}>{f.title}</h3>
+                  <p className="text-amber-600 font-semibold text-sm mb-3">{f.price}</p>
                   <ul className="text-sm text-gray-600 space-y-1.5">
                     {f.items.map((item) => (
                       <li key={item} className="flex items-start gap-2">

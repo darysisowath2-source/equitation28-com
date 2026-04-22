@@ -8,20 +8,20 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    title: "Au cœur du village",
-    text: "Les Écuries du Moulin sont situées à Ecluzelles, un village paisible d'Eure-et-Loir, à quelques kilomètres de Dreux et de Rambouillet. Le centre bénéficie d'un cadre naturel exceptionnel, entouré de prairies et de forêts idéales pour les balades à cheval.",
+    title: "Au cœur d'Écluzelles",
+    text: "Situées dans un cadre exceptionnel sur 13 hectares à 1 heure à l'Ouest de Paris, les Écuries du Moulin vous accueillent dans une ambiance à la fois professionnelle et familiale. Facilement accessibles par la N12 et la N154, elles offrent une infrastructure de qualité adaptée à tous les cavaliers, du loisir à la compétition.",
     img: "/images/photos/319428_coeur du village.jpg",
     alt: "Au cœur du village d'Ecluzelles",
   },
   {
     title: "La vie au pré",
-    text: "Nos chevaux évoluent dans de vastes prairies clôturées, dans le respect de leur bien-être. Nous accordons une grande importance à la vie en liberté, aux soins quotidiens et à l'équilibre physique et mental de chaque animal.",
+    text: "Nos écuries possèdent 10 hectares de prairies, offrant un cadre idéal pour le bien-être de nos chevaux et poneys. Ces espaces de pâture permettent à nos équidés de profiter d'une vie en plein air, favorisant leur santé physique et mentale. Les prairies sont soigneusement entretenues, garantissant une herbe fraîche et nutritive.",
     img: "/images/photos/667374_436365_cheval-pre2.jpg",
     alt: "La vie au pré",
   },
   {
     title: "L'enseignement",
-    text: "Notre équipe d'enseignants diplômés d'État accompagne les cavaliers de tous niveaux, du premier contact avec le cheval jusqu'à la compétition. Les cours sont adaptés à chaque âge et objectif, dans une ambiance bienveillante et familiale.",
+    text: "Avec plus de 26 ans d'expertise, notre équipe d'enseignants diplômés d'État accompagne les cavaliers de tous niveaux, du premier contact avec le cheval jusqu'à la compétition. Les cours sont adaptés à chaque âge et objectif, dans une ambiance bienveillante et familiale.",
     img: "/images/photos/563715_francesca et cesar.jpg",
     alt: "Enseignement équestre",
   },
@@ -33,13 +33,34 @@ const sections = [
   },
 ];
 
+const team = [
+  {
+    name: "Francesca Bormioli",
+    role: "Fondatrice & gérante",
+    bio: "Francesca Bormioli a fondé les Écuries du Moulin il y a 26 ans après une carrière réussie en saut d'obstacles. Diplômée d'État en monitorat, elle enseigne l'équitation à un public varié, partageant son expérience et son amour du cheval avec enthousiasme et bienveillance.",
+    img: "/images/photos/563715_francesca et cesar.jpg",
+  },
+  {
+    name: "Pauline Fillion",
+    role: "Enseignante",
+    bio: "Monitrice d'équitation diplômée depuis 2015, Pauline est une cavalière passionnée et expérimentée. Elle accompagne les élèves des écuries avec enthousiasme et pédagogie, en adaptant son enseignement à chaque cavalier.",
+    img: "/images/photos/554993_gwen_licol_nestor.jpg",
+  },
+  {
+    name: "Johann Papillon",
+    role: "Enseignant",
+    bio: "Expert en pony games, randonnée, voltige et attelage, Johann transmet avec enthousiasme son savoir-faire dans ces disciplines variées. Que ce soit pour une initiation ludique, une sortie en pleine nature ou une démonstration de voltige, il saura vous faire découvrir l'équitation sous toutes ses facettes.",
+    img: "/images/photos/258635_tristan-longe.jpg",
+  },
+];
+
 const installations = [
-  { title: "Carrière", desc: "Carrière en sable arrosé pour les cours et l'entraînement, disponible toute l'année." },
-  { title: "Boxes", desc: "Boxes spacieux et bien aérés, paillés quotidiennement pour le confort des pensionnaires." },
-  { title: "Prairies", desc: "Plusieurs hectares de prairies clôturées pour la mise au pré des chevaux." },
-  { title: "Salle de soins", desc: "Espace dédié aux soins, avec douche et matériel de sellerie." },
-  { title: "Sellerie", desc: "Sellerie équipée et sécurisée pour le rangement du matériel des cavaliers." },
-  { title: "Parking", desc: "Grand parking avec accès facile pour les vans et remorques." },
+  { title: "Manège couvert", desc: "Grand manège couvert de 30 × 60 m avec sol Normandie Drainage, idéal pour l'entraînement en toutes saisons." },
+  { title: "Carrière blanche", desc: "Vaste carrière de 3 600 m² (80 × 45 m), sol Toubin Clément, arrosage automatique, utilisée pour les compétitions." },
+  { title: "Carrière jaune", desc: "Carrière polyvalente de 1 200 m² (30 × 40 m), sable de qualité avec arrosage automatique, idéale pour les cours." },
+  { title: "Boxes", desc: "Une quarantaine de boxes spacieux (4 × 4 m ou 3,5 × 3 m), bien ventilés et entretenus quotidiennement." },
+  { title: "Prairies", desc: "10 hectares de prairies clôturées pour la mise au pré des chevaux et poneys dans les meilleures conditions." },
+  { title: "Parking", desc: "Grand parking avec accès facile pour les vans et remorques, y compris stationnement longue durée." },
 ];
 
 export default function Presentation() {
@@ -58,7 +79,7 @@ export default function Presentation() {
           <p className="text-amber-400 uppercase text-xs tracking-widest mb-3 font-semibold">Le club</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Présentation</h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Un centre équestre familial au cœur de l'Eure-et-Loir, ouvert à tous depuis plus de 10 ans.
+            Un centre équestre familial sur 13 hectares, à 1h à l'Ouest de Paris, ouvert à tous depuis plus de 26 ans.
           </p>
         </div>
       </section>
@@ -66,12 +87,7 @@ export default function Presentation() {
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-2 flex gap-6 overflow-x-auto">
           {[["L'équipe", "#equipe"], ["Nos installations", "#installations"], ["Notre histoire", "#histoire"]].map(([label, href]) => (
-            <a
-              key={href}
-              href={href}
-              className="text-sm font-medium whitespace-nowrap py-2 transition-colors hover:text-amber-600"
-              style={{ color: "var(--primary)" }}
-            >
+            <a key={href} href={href} className="text-sm font-medium whitespace-nowrap py-2 transition-colors hover:text-amber-600" style={{ color: "var(--primary)" }}>
               {label}
             </a>
           ))}
@@ -93,23 +109,33 @@ export default function Presentation() {
         ))}
       </div>
 
+      {/* L'équipe */}
       <section id="equipe" style={{ background: "var(--sand)" }} className="py-16 px-4">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-          <div className="md:w-1/2 rounded-xl overflow-hidden shadow-md">
-            <img src="/images/photos/754964_DSC04508.jpg" alt="L'équipe des Écuries du Moulin" loading="lazy" className="w-full h-64 object-cover" />
-          </div>
-          <div className="md:w-1/2">
-            <div className="w-8 h-0.5 bg-amber-500 mb-3" />
-            <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--primary)" }}>L'équipe</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Notre équipe est composée d'enseignants diplômés d'État, passionnés par l'équitation et
-              dévoués au bien-être des cavaliers et des chevaux. Chaque membre partage la même vision :
-              transmettre le goût du cheval dans le respect et la bonne humeur.
-            </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="w-8 h-0.5 bg-amber-500 mb-3 mx-auto" />
+          <h2 className="text-2xl font-bold mb-3 text-center" style={{ color: "var(--primary)" }}>L'équipe</h2>
+          <p className="text-gray-500 text-sm text-center mb-10 max-w-xl mx-auto">
+            Nos enseignants, tous cavaliers expérimentés, combinent expertise technique et passion pour transmettre leur savoir dans un cadre bienveillant et professionnel.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {team.map((m) => (
+              <div key={m.name} className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-amber-300 hover:shadow-md transition-all">
+                <div className="h-52 overflow-hidden">
+                  <img src={m.img} alt={m.name} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <div className="p-5">
+                  <div className="w-6 h-0.5 bg-amber-400 mb-2" />
+                  <h3 className="font-bold text-sm mb-0.5" style={{ color: "var(--primary)" }}>{m.name}</h3>
+                  <p className="text-xs text-amber-600 uppercase tracking-wide font-semibold mb-3">{m.role}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">{m.bio}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Installations */}
       <section id="installations" className="py-16 px-4" style={{ background: "var(--cream)" }}>
         <div className="max-w-5xl mx-auto">
           <div className="w-8 h-0.5 bg-amber-500 mb-3 mx-auto" />
@@ -126,6 +152,7 @@ export default function Presentation() {
         </div>
       </section>
 
+      {/* Histoire */}
       <section id="histoire" style={{ background: "var(--sand)" }} className="py-16 px-4">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row-reverse gap-10 items-center">
           <div className="md:w-1/2 rounded-xl overflow-hidden shadow-md">
@@ -135,13 +162,10 @@ export default function Presentation() {
             <div className="w-8 h-0.5 bg-amber-500 mb-3" />
             <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--primary)" }}>Un peu de notre histoire…</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Les Écuries du Moulin ont ouvert leurs portes à Ecluzelles il y a plus de dix ans, portées
-              par la passion de l'équitation et le souhait d'offrir un lieu d'apprentissage chaleureux
-              aux cavaliers de la région.
+              Francesca Bormioli a fondé les Écuries du Moulin il y a 26 ans après une carrière réussie en saut d'obstacles. Installée à Écluzelles, elle a créé un centre équestre et des écuries de propriétaires alliant professionnalisme et esprit familial.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Depuis, le club a accueilli des centaines de cavaliers, de la première mise en selle au
-              galop de compétition, en passant par les stages qui font la renommée du club chaque saison.
+              Depuis, le club a accueilli des centaines de cavaliers, de la première mise en selle au galop de compétition, en passant par les stages qui font la renommée du club chaque saison.
             </p>
           </div>
         </div>
