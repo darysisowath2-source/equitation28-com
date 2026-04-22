@@ -110,17 +110,17 @@ export default function Home() {
       {/* ── HERO PLEIN ÉCRAN ── même technique que les autres pages */}
       <section
         className="relative min-h-screen px-4 overflow-hidden flex items-end justify-start"
-        style={{ backgroundImage: `url(/images/rubriques/71815_coucher-de-soleil.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}
+        style={{ backgroundImage: `url(/images/rubriques/533077_cours.jpg)`, backgroundSize: "cover", backgroundPosition: "center 30%" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/10" />
         <div className="relative z-10 max-w-2xl pb-20 md:pb-28 px-8">
-          <p className="text-amber-400 uppercase text-xs tracking-widest mb-3 font-semibold">
+          <p className="text-white/60 uppercase text-xs tracking-widest mb-4 font-semibold">
             Centre équestre — Eure-et-Loir (28)
           </p>
-          <h1 className="text-4xl sm:text-6xl font-bold text-white mb-5 leading-tight">
+          <h1 className="text-4xl sm:text-6xl font-bold text-white mb-5 leading-tight drop-shadow-lg">
             Les Écuries<br />du Moulin
           </h1>
-          <p className="text-white/80 text-lg mb-8 max-w-lg leading-relaxed">
+          <p className="text-white/85 text-lg mb-8 max-w-lg leading-relaxed drop-shadow">
             13 hectares à Ecluzelles, à 1h de Paris. Cours, stages et pension depuis 26 ans.
           </p>
 
@@ -129,7 +129,7 @@ export default function Home() {
             href={GOOGLE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 mb-8 px-4 py-2.5 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors"
+            className="inline-flex items-center gap-3 mb-8 px-4 py-2.5 bg-black/30 backdrop-blur-sm rounded-xl border border-white/15 hover:bg-black/50 transition-colors"
           >
             <GoogleIcon />
             <div>
@@ -152,7 +152,7 @@ export default function Home() {
             </a>
             <a
               href="/contact"
-              className="border-2 border-white/60 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-white/10 transition-colors text-center"
+              className="bg-white/15 backdrop-blur-sm border border-white/40 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-white/25 transition-colors text-center"
             >
               On a une question
             </a>
@@ -397,7 +397,7 @@ export default function Home() {
               { src: "/images/photos/837442_sous la neige.jpg", alt: "Sous la neige" },
               { src: "/images/photos/554993_gwen_licol_nestor.jpg", alt: "Avec les chevaux" },
               { src: "/images/photos/861746_retour-longe.jpg", alt: "Entraînement" },
-              { src: "/images/rubriques/533077_cours.jpg", alt: "Cours collectif" },
+              { src: "/images/rubriques/71815_coucher-de-soleil.jpg", alt: "Coucher de soleil" },
             ].map((img, i) => (
               <FadeIn key={img.src} delay={i * 50}>
                 <div className="aspect-square overflow-hidden rounded-lg">
