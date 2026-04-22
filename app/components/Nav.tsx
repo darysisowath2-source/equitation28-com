@@ -9,7 +9,6 @@ const links = [
   { label: "Activités & Cours", href: "/activites" },
   { label: "Propriétaires", href: "/proprietaires" },
   { label: "Vie du club", href: "/vie-du-club" },
-  { label: "Documents utiles", href: "/documents" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -114,9 +114,9 @@ export default function Home() {
   return (
     <>
       {/* ── HERO SPLIT ── image gauche visible immédiatement, texte droite */}
-      <section className="min-h-screen flex flex-col md:flex-row">
+      <section className="min-h-screen md:h-screen flex flex-col md:flex-row">
         {/* Photo — occupe toute la moitié gauche, aucun overlay */}
-        <div className="md:w-[55%] relative overflow-hidden min-h-[50vh] md:min-h-0">
+        <div className="md:w-[55%] relative overflow-hidden min-h-[50vh] md:min-h-0 md:h-full">
           <img
             src="/images/rubriques/71815_coucher-de-soleil.jpg"
             alt="Chevaux au coucher du soleil aux Écuries du Moulin"
@@ -208,31 +208,6 @@ export default function Home() {
               <span className="text-white/90">{value}</span>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ── HISTOIRE COURTE ── */}
-      <section style={{ background: "var(--cream)" }} className="py-16 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-          <FadeIn className="md:w-1/2 rounded-2xl overflow-hidden shadow-md">
-            <img
-              src="/images/photos/319428_coeur du village.jpg"
-              alt="Les Écuries du Moulin à Ecluzelles"
-              className="w-full h-72 object-cover"
-            />
-          </FadeIn>
-          <FadeIn delay={150} className="md:w-1/2">
-            <p className="text-amber-700 uppercase text-xs tracking-widest font-semibold mb-3" style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>Notre histoire</p>
-            <h2 className="text-3xl font-bold mb-4" style={{ color: "var(--primary)" }}>
-              Un endroit qu'on n'a pas créé par hasard
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4" style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>
-              Les Écuries du Moulin ont ouvert leurs portes à Ecluzelles il y a plus de 26 ans, portées par une seule conviction : qu'on peut apprendre à monter à cheval dans un cadre humain, bienveillant et ancré dans la nature.
-            </p>
-            <p className="text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>
-              Depuis, des centaines de cavaliers sont passés ici. Ce qui revient dans les mots de nos familles, c'est toujours la même chose : l'ambiance.
-            </p>
-          </FadeIn>
         </div>
       </section>
 

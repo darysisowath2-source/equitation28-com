@@ -38,9 +38,9 @@ export default function Footer() {
           <ul className="text-sm space-y-1.5 text-amber-100/80">
             {[
               ["Inscriptions en ligne", "https://cloud10.kavalog.fr/ECURIESDUMOULIN/"],
-              ["Activités & Cours", "/activites"],
+              ["Cours & Tarifs", "/activites"],
               ["Propriétaires", "/proprietaires"],
-              ["Contact", "/contact"],
+              ["Contact & Documents", "/contact"],
             ].map(([label, href]) => (
               <li key={href}>
                 <a href={href} className="hover:text-amber-300 transition-colors">

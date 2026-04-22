@@ -21,8 +21,8 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Coordonnées + formulaire */}
-      <section style={{ background: "var(--cream)" }} className="py-16 px-4">
+      {/* Coordonnées + formulaire + documents */}
+      <section style={{ background: "var(--cream)" }} className="py-16 px-4 pb-0">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
           {/* Colonne gauche — infos + carte */}
@@ -75,6 +75,38 @@ export default function Contact() {
             <h2 className="text-xl font-bold mb-2" style={{ color: "var(--primary)" }}>Envoyer un message</h2>
             <p className="text-sm text-gray-500 mb-6">On vous répond sous 24h, SMS acceptés.</p>
             <ContactForm />
+          </div>
+        </div>
+      </section>
+      {/* Documents */}
+      <section style={{ background: "var(--sand)" }} className="py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="w-8 h-0.5 bg-amber-500 mb-3" />
+          <h2 className="text-xl font-bold mb-2" style={{ color: "var(--primary)" }}>Documents & formulaires</h2>
+          <p className="text-sm text-gray-500 mb-6">Tous les documents peuvent être demandés par email ou directement à l'accueil.</p>
+          <div className="space-y-3">
+            {[
+              { titre: "Règlement intérieur", desc: "Les règles de vie et de sécurité en vigueur aux Écuries du Moulin." },
+              { titre: "Fiche d'inscription annuelle", desc: "Formulaire à compléter pour l'inscription aux cours de la saison." },
+              { titre: "Fiche médicale", desc: "Certificat médical requis pour la pratique de l'équitation." },
+              { titre: "Fiche inscription stage", desc: "Formulaire pour s'inscrire aux stages des vacances scolaires." },
+              { titre: "Charte du propriétaire", desc: "Droits et devoirs des propriétaires de chevaux pensionnaires." },
+            ].map((doc) => (
+              <div key={doc.titre} className="flex items-start gap-5 p-4 border border-gray-200 rounded-xl bg-white hover:border-amber-300 transition-all">
+                <div className="w-1 h-10 bg-amber-400 rounded-full shrink-0 mt-1" />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-800 text-sm mb-0.5">{doc.titre}</h3>
+                  <p className="text-xs text-gray-500">{doc.desc}</p>
+                </div>
+                <a
+                  href="mailto:contact@equitation28.com"
+                  className="text-xs font-medium border px-3 py-1.5 rounded-full transition-colors whitespace-nowrap self-center hover:bg-amber-500 hover:text-white hover:border-amber-500"
+                  style={{ color: "var(--primary)", borderColor: "var(--primary)" }}
+                >
+                  Demander
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
