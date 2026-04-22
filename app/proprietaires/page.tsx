@@ -1,3 +1,4 @@
+import ScrollArrow from "../components/ScrollArrow";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,6 +46,7 @@ export default function Proprietaires() {
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Propriétaires</h1>
           <p className="text-white/80 max-w-xl mx-auto">Confiez-nous votre cheval dans un cadre naturel, sécurisé et à taille humaine.</p>
         </div>
+        <ScrollArrow />
       </section>
 
       <section style={{ background: "var(--cream)" }} className="py-16 px-4">

@@ -1,3 +1,4 @@
+import ScrollArrow from "../components/ScrollArrow";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -82,6 +83,7 @@ export default function Presentation() {
             Un centre équestre familial sur 13 hectares, à 1h à l'Ouest de Paris, ouvert à tous depuis plus de 26 ans.
           </p>
         </div>
+        <ScrollArrow />
       </section>
 
       <div className="bg-white border-b border-gray-100">

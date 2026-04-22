@@ -1,3 +1,4 @@
+import ScrollArrow from "../components/ScrollArrow";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -68,6 +69,7 @@ export default function Activites() {
             Des cours adaptés à tous les niveaux, de 3 ans à l'âge adulte, dans une ambiance familiale et bienveillante.
           </p>
         </div>
+        <ScrollArrow />
       </section>
 
       <section style={{ background: "var(--cream)" }} className="py-16 px-4">

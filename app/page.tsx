@@ -1,4 +1,5 @@
 import FadeIn from "./components/FadeIn";
+import ScrollArrow from "./components/ScrollArrow";
 
 const cards = [
   {
@@ -158,6 +159,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <ScrollArrow />
       </section>
 
       {/* ── BANDEAU INFOS ── */}

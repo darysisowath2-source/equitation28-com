@@ -1,3 +1,4 @@
+import ScrollArrow from "../components/ScrollArrow";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function VieduClub() {
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Vie du club</h1>
           <p className="text-white/80 max-w-xl mx-auto">Retrouvez les moments forts, les événements et les actualités des Écuries du Moulin.</p>
         </div>
+        <ScrollArrow />
       </section>
 
       <section style={{ background: "var(--cream)" }} className="py-16 px-4">

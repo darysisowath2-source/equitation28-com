@@ -1,3 +1,4 @@
+import ScrollArrow from "../components/ScrollArrow";
 import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
 
@@ -19,6 +20,7 @@ export default function Contact() {
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Venez nous voir</h1>
           <p className="text-white/80 max-w-xl mx-auto">Une question, une visite, une inscription ? On vous répond sous 24h.</p>
         </div>
+        <ScrollArrow />
       </section>
 
       {/* Coordonnées + formulaire + documents */}
