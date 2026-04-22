@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm dev *)",
+      "Bash(taskkill /PID 8796 /F)",
+      "Bash(cmd /c \"taskkill /PID 8796 /F\")",
+      "Bash(cmd /c \"taskkill /F /PID 8796\")",
+      "Bash(cmd /c \"netstat -ano | findstr :3000\")",
+      "WebSearch",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:maps.google.com)",
+      "WebFetch(domain:fr.mappy.com)",
+      "WebFetch(domain:www.koifaire.com)",
+      "WebFetch(domain:centre.contact)",
+      "WebFetch(domain:www.pagesjaunes.fr)",
+      "WebFetch(domain:centre-equestre.centre.contact)",
+      "WebFetch(domain:www.sportiche.fr)",
+      "WebFetch(domain:centresequestre.nosavis.com)",
+      "Bash(xargs grep *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:v for k,v in d.items\\(\\) if 'mcp' in k.lower\\(\\) or 'gmail' in str\\(v\\).lower\\(\\)}, indent=2\\)\\)\")",
+      "Bash(python3 -c \"import uuid; print\\('ecuriesmoulin-' + uuid.uuid4\\(\\).hex[:16]\\)\")",
+      "Bash(node -e \"const {randomBytes} = require\\('crypto'\\); console.log\\('ecuriesmoulin-' + randomBytes\\(8\\).toString\\('hex'\\)\\)\")",
+      "Bash(curl -s -X POST https://ntfy.sh/ecuriesmoulin-e3b7c48516b17c49 -H 'Title: Test formulaire Ecuries du Moulin' -H 'Priority: high' -H 'Tags: horse,envelope' -d 'Nom: Test Claude *)",
+      "Bash(vercel --prod --yes)",
+      "Bash(vercel project *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://api.vercel.com\")",
+      "Bash(curl -s 'https://api.vercel.com/v6/deployments?projectId=prj_PsD3j1cbhawk0gye1YnQ7AJlkuZc&limit=1&target=production' -H 'Authorization: Bearer vca_5T4U0TfvZgoSfPx6eeqXtMyg3kvrgFrM51kmrXNoBRYEtLddi54JRfAK')",
+      "Bash(node -e \"const chunks=[]; process.stdin.on\\('data',c=>chunks.push\\(c\\)\\); process.stdin.on\\('end',\\(\\)=>{const d=JSON.parse\\(chunks.join\\(''\\)\\); const dep=d.deployments?.[0]; console.log\\(dep?.url, dep?.readyState, dep?.createdAt\\);}\\)\")",
+      "Bash(curl -s -X POST https://equitation28-com.vercel.app/api/contact -H 'Content-Type: application/json' -d '{\"name\":\"Test Claude\",\"email\":\"test@test.com\",\"subject\":\"Test formulaire\",\"message\":\"Ceci est un vrai test du formulaire de contact des Écuries du Moulin.\"}')",
+      "WebFetch(domain:www.equitation28.com)",
+      "WebFetch(domain:www.facebook.com)",
+      "Bash(git add *)"
+    ]
+  }
+}
