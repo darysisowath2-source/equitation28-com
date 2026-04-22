@@ -32,14 +32,14 @@ export default function Nav() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-2 flex items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto px-6 py-1 flex items-center justify-between gap-4">
 
         {/* Logo : emblème + nom */}
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <img
             src="/images/logo_emblem.png"
             alt="Écuries du Moulin"
-            className="h-7 w-auto"
+            className="h-5 w-auto"
           />
           <span
             className={`font-bold text-sm hidden lg:block transition-colors duration-300 ${
