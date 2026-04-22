@@ -32,12 +32,27 @@ export default function Nav() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <img src="/images/logo.png" alt="Écuries du Moulin" className="h-8 w-auto" />
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
+
+        {/* Logo : emblème + nom */}
+        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+          <img
+            src="/images/logo_emblem.png"
+            alt="Écuries du Moulin"
+            className="h-10 w-auto"
+          />
+          <span
+            className={`font-bold text-base hidden lg:block transition-colors duration-300 ${
+              scrolled ? "text-[#3d2b1f]" : "text-white drop-shadow"
+            }`}
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            Écuries du Moulin
+          </span>
         </Link>
 
-        <nav className="hidden md:flex flex-wrap gap-1" aria-label="Navigation principale">
+        {/* Liens desktop */}
+        <nav className="hidden md:flex items-center gap-0.5" aria-label="Navigation principale">
           {links.map((l) => {
             const active = pathname === l.href;
             return (
@@ -45,14 +60,14 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 aria-current={active ? "page" : undefined}
-                className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${
+                className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors whitespace-nowrap ${
                   active
                     ? scrolled
                       ? "bg-amber-50 text-amber-700 border border-amber-200"
                       : "text-amber-400 border border-amber-400/50"
                     : scrolled
                     ? "text-gray-600 hover:bg-amber-50 hover:text-amber-800"
-                    : "text-white/90 hover:text-white"
+                    : "text-white/90 hover:text-white drop-shadow"
                 }`}
               >
                 {l.label}
@@ -61,6 +76,7 @@ export default function Nav() {
           })}
         </nav>
 
+        {/* Hamburger mobile */}
         <button
           className={`md:hidden p-2 rounded transition-colors ${
             scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white"
@@ -75,9 +91,10 @@ export default function Nav() {
         </button>
       </div>
 
+      {/* Menu mobile */}
       {open && (
         <nav
-          className="md:hidden border-t border-white/20 px-4 py-2 flex flex-col gap-1 bg-black/60 backdrop-blur-md"
+          className="md:hidden border-t border-white/20 px-4 py-3 flex flex-col gap-1 bg-black/70 backdrop-blur-md"
           aria-label="Menu mobile"
         >
           {links.map((l) => {
@@ -87,7 +104,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 aria-current={active ? "page" : undefined}
-                className={`py-2 px-2 text-sm font-medium rounded ${
+                className={`py-2.5 px-3 text-sm font-medium rounded ${
                   active ? "text-amber-400" : "text-white/90 hover:text-white"
                 }`}
                 onClick={() => setOpen(false)}

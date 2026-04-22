@@ -112,8 +112,8 @@ export default function Home() {
         className="relative min-h-screen px-4 overflow-hidden flex items-end justify-start"
         style={{ backgroundImage: `url(/images/rubriques/71815_coucher-de-soleil.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
-        <div className="relative z-10 max-w-2xl pb-16 md:pb-24 px-4">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+        <div className="relative z-10 max-w-2xl pb-20 md:pb-28 px-8">
           <p className="text-amber-400 uppercase text-xs tracking-widest mb-3 font-semibold">
             Centre équestre — Eure-et-Loir (28)
           </p>
