@@ -10,7 +10,7 @@ const activites = [
   {
     title: "Cours enfants & ados (3–17 ans)",
     desc: "Des cours adaptés à chaque âge, du poney club pour les plus petits jusqu'aux galops pour les ados. Ambiance familiale, poneys calmes et encadrement diplômé d'État.",
-    img: "/images/photos/554993_gwen_licol_nestor.jpg",
+    img: "/images/photos/52688_lea-et-tibisou-2.jpg",
   },
   {
     title: "Cours adultes (18 ans et plus)",
@@ -25,7 +25,7 @@ const activites = [
   {
     title: "CSO — Saut d'obstacles",
     desc: "Préparez-vous à la compétition avec nos entraînements spécifiques en saut d'obstacles. De l'initiation aux barres au parcours en hauteur.",
-    img: "/images/photos/790107_concours.jpg",
+    img: "/images/photos/687154_florestine .jpg",
   },
   {
     title: "Equifun & Dressage",

@@ -114,12 +114,12 @@ export default function Home() {
   return (
     <>
       {/* ── HERO SPLIT ── image gauche visible immédiatement, texte droite */}
-      <section className="min-h-[90vh] flex flex-col md:flex-row">
+      <section className="min-h-screen flex flex-col md:flex-row">
         {/* Photo — occupe toute la moitié gauche, aucun overlay */}
         <div className="md:w-[55%] relative overflow-hidden min-h-[50vh] md:min-h-0">
           <img
-            src="/images/photos/563715_francesca et cesar.jpg"
-            alt="Cours d'équitation aux Écuries du Moulin"
+            src="/images/rubriques/71815_coucher-de-soleil.jpg"
+            alt="Chevaux au coucher du soleil aux Écuries du Moulin"
             className="w-full h-full object-cover object-center"
             style={{ position: "absolute", inset: 0 }}
           />
@@ -449,7 +449,7 @@ export default function Home() {
               { src: "/images/photos/837442_sous la neige.jpg", alt: "Sous la neige" },
               { src: "/images/photos/554993_gwen_licol_nestor.jpg", alt: "Avec les chevaux" },
               { src: "/images/photos/861746_retour-longe.jpg", alt: "Entraînement" },
-              { src: "/images/rubriques/71815_coucher-de-soleil.jpg", alt: "Coucher de soleil" },
+              { src: "/images/rubriques/533077_cours.jpg", alt: "Cours collectif" },
             ].map((img, i) => (
               <FadeIn key={img.src} delay={i * 50}>
                 <div className="aspect-square overflow-hidden rounded-lg">
