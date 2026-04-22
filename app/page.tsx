@@ -26,12 +26,6 @@ const cards = [
     img: "/images/photos/150015_fete du club.jpg",
   },
   {
-    title: "Documents utiles",
-    desc: "Règlements intérieurs, formulaires d'inscription et informations pratiques.",
-    href: "/documents",
-    img: "/images/photos/790107_concours.jpg",
-  },
-  {
     title: "Contact",
     desc: "Une question ? Contactez-nous par téléphone, SMS ou via notre formulaire en ligne.",
     href: "/contact",
@@ -113,56 +107,37 @@ function GoogleIcon() {
 export default function Home() {
   return (
     <>
-      {/* ── HERO SPLIT ── image gauche visible immédiatement, texte droite */}
-      <section className="min-h-screen md:h-screen flex flex-col md:flex-row">
-        {/* Photo — occupe toute la moitié gauche, aucun overlay */}
-        <div className="md:w-[55%] relative overflow-hidden min-h-[50vh] md:min-h-0 md:h-full">
-          <img
-            src="/images/rubriques/71815_coucher-de-soleil.jpg"
-            alt="Chevaux au coucher du soleil aux Écuries du Moulin"
-            className="w-full h-full object-cover object-center"
-            style={{ position: "absolute", inset: 0 }}
-          />
-        </div>
-
-        {/* Texte — fond crème, centré verticalement */}
-        <div
-          className="md:w-[45%] flex flex-col justify-center px-8 md:px-14 py-14"
-          style={{ background: "var(--cream)" }}
-        >
-          <p
-            className="text-amber-700 uppercase text-xs tracking-widest font-semibold mb-4"
-            style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}
-          >
+      {/* ── HERO PLEIN ÉCRAN ── même technique que les autres pages */}
+      <section
+        className="relative min-h-screen px-4 overflow-hidden flex items-end justify-start"
+        style={{ backgroundImage: `url(/images/rubriques/71815_coucher-de-soleil.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+        <div className="relative z-10 max-w-2xl pb-16 md:pb-24 px-4">
+          <p className="text-amber-400 uppercase text-xs tracking-widest mb-3 font-semibold">
             Centre équestre — Eure-et-Loir (28)
           </p>
-          <h1
-            className="text-4xl sm:text-5xl font-bold mb-5 leading-tight"
-            style={{ color: "var(--primary)" }}
-          >
-            Les Écuries du Moulin
+          <h1 className="text-4xl sm:text-6xl font-bold text-white mb-5 leading-tight">
+            Les Écuries<br />du Moulin
           </h1>
-          <p
-            className="text-gray-600 leading-relaxed mb-8 text-base"
-            style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}
-          >
-            Un club familial à Ecluzelles où enfants et adultes apprennent à monter dans la bonne humeur, depuis plus de 26 ans. Près de Dreux et Rambouillet.
+          <p className="text-white/80 text-lg mb-8 max-w-lg leading-relaxed">
+            13 hectares à Ecluzelles, à 1h de Paris. Cours, stages et pension depuis 26 ans.
           </p>
 
-          {/* Google Reviews badge — cliquable */}
+          {/* Google Reviews badge */}
           <a
             href={GOOGLE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 mb-8 p-3 bg-white rounded-xl border border-gray-100 shadow-sm w-fit hover:shadow-md transition-shadow"
+            className="inline-flex items-center gap-3 mb-8 px-4 py-2.5 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors"
           >
             <GoogleIcon />
-            <div style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>
+            <div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-bold text-gray-800">4,8</span>
+                <span className="text-sm font-bold text-white">4,8</span>
                 <Stars />
               </div>
-              <p className="text-xs text-gray-500">36 avis Google vérifiés</p>
+              <p className="text-xs text-white/70">36 avis Google vérifiés</p>
             </div>
           </a>
 
@@ -171,15 +146,13 @@ export default function Home() {
               href="https://cloud10.kavalog.fr/ECURIESDUMOULIN/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-amber-500 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-amber-400 transition-colors shadow-md text-center"
-              style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}
+              className="bg-amber-500 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-amber-400 transition-colors shadow-lg text-center"
             >
               Je veux m'inscrire
             </a>
             <a
               href="/contact"
-              className="border-2 font-semibold px-7 py-3.5 rounded-full hover:bg-amber-50 transition-colors text-center"
-              style={{ borderColor: "var(--primary)", color: "var(--primary)", fontFamily: "var(--font-geist-sans), sans-serif" }}
+              className="border-2 border-white/60 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-white/10 transition-colors text-center"
             >
               On a une question
             </a>

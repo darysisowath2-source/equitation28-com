@@ -38,19 +38,19 @@ const team = [
     name: "Francesca Bormioli",
     role: "Fondatrice & gérante",
     bio: "Francesca Bormioli a fondé les Écuries du Moulin il y a 26 ans après une carrière réussie en saut d'obstacles. Diplômée d'État en monitorat, elle enseigne l'équitation à un public varié, partageant son expérience et son amour du cheval avec enthousiasme et bienveillance.",
-    img: "/images/photos/563715_francesca et cesar.jpg",
+    img: "/images/photos/328787_francesca.jpg",
   },
   {
     name: "Pauline Fillion",
     role: "Enseignante",
     bio: "Monitrice d'équitation diplômée depuis 2015, Pauline est une cavalière passionnée et expérimentée. Elle accompagne les élèves des écuries avec enthousiasme et pédagogie, en adaptant son enseignement à chaque cavalier.",
-    img: "/images/photos/554993_gwen_licol_nestor.jpg",
+    img: "/images/photos/917953_pauline.jpg",
   },
   {
     name: "Johann Papillon",
     role: "Enseignant",
     bio: "Expert en pony games, randonnée, voltige et attelage, Johann transmet avec enthousiasme son savoir-faire dans ces disciplines variées. Que ce soit pour une initiation ludique, une sortie en pleine nature ou une démonstration de voltige, il saura vous faire découvrir l'équitation sous toutes ses facettes.",
-    img: "/images/photos/258635_tristan-longe.jpg",
+    img: "/images/photos/79782_johann.jpg",
   },
 ];
 

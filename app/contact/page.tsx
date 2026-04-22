@@ -11,7 +11,7 @@ export default function Contact() {
     <>
       <section
         className="relative min-h-screen px-4 text-center overflow-hidden flex items-center justify-center"
-        style={{ backgroundImage: `url(/images/rubriques/71815_coucher-de-soleil.jpg)`, backgroundSize: "cover", backgroundPosition: "center 40%" }}
+        style={{ backgroundImage: `url(/images/photos/861746_retour-longe.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/60" />
         <div className="relative z-10">
